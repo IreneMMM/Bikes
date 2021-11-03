@@ -29,6 +29,11 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("scripts", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -97,5 +102,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

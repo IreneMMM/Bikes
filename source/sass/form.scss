@@ -1,0 +1,72 @@
+.form__title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $basic-white;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: $basic-black;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form {
+  width: 327px;
+}
+
+.form__field {
+  margin-bottom: 20px;
+}
+
+.form__field input {
+  width: 100%;
+  padding: 14px 30px 10px;
+  background-color: $basic-white;
+  border: 1px solid $input-border;
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    padding: 13px 26px 17px;
+  }
+
+  &::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: $basic-grey-dark;
+    opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $basic-green;
+  }
+}
+
+.form__button {
+  width: 326px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
