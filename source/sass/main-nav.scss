@@ -97,3 +97,51 @@
     padding-left: 16px;
   }
 }
+
+
+
+
+
+.main-nav--open {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.main-nav__list--open {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__toggle--open {
+  @media (max-width: $tablet-width) {
+    background-color: $basic-white;
+    background-image: url("../img/icons/icon-main-nav-open.svg");
+  }
+}
+
+.main-nav--no-js {
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.main-nav__toggle--no-js {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list--no-js {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

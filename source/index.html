@@ -6,17 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
-  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2"> -->
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-extra-bold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-extra-bold.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-light.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-light.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-semi-bold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-semi-bold.woff2" as="font"> -->
 </head>
-
-<body>
-  <header class="page-header">
-    <nav class="main-nav">
+<body class="page">
+  <header class="page-header page-header--nojs">
+    <nav class="main-nav main-nav--no-js">
       <a class="main-nav__logo">
         <img src="img/icon-logo.svg" width="68" height="21" alt="Главная страница сайта Велосипеды">
       </a>
-      <ul class="main-nav__list main-nav__list--closed main-nav__list--no-js">
+      <ul class="main-nav__list main-nav__list--no-js">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#benefits">О нас</a>
         </li>
@@ -28,26 +36,26 @@
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#contacts">Контакты</a>
-        </li>
+        </li>        
       </ul>
       <button class="main-nav__toggle main-nav__toggle--no-js" type="button"></button>
     </nav>
 
-    <section class="promo">
+    <section class="promo promo--nojs">
       <div class="promo__info">
         <h1 class="promo__title">Мы продаем велосипеды</h1>
         <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="promo__form form">
-        <form action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+        <form action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
           <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="form__field">
             <label class="visually-hidden" for="user-name">Имя</label>
-            <input type="text" name="name" id="user-name" placeholder="Введите Ваше Имя" required>
+            <input type="text" name="name" id="user-name" placeholder="Введите Ваше Имя" required="">
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="user-phone">Телефон</label>
-            <input type="tel" name="phone" id="user-phone" placeholder="Введите Ваш номер телефона" required>
+            <input type="tel" name="phone" id="user-phone" placeholder="Введите Ваш номер телефона" required="">
           </div>
           <button class="form__button" type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -74,7 +82,7 @@
           <a class="catalog__link catalog__link--road-bike" href="#">
             <picture>
               <!-- 1х: 342px; 2x: 684px -->
-              <img class="catalog__img" src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg" alt="Дорожный велосипед">
+              <img class="catalog__img" src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg" width="342" height="543" alt="Дорожный велосипед">
             </picture>
           </a>
         </li>
@@ -83,8 +91,7 @@
           <a class="catalog__link catalog__link--mountain-bike" href="#">
             <picture>
               <!-- 1х: 342px; 2x: 684px -->
-              <img class="catalog__img" src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg"
-                alt="Горный велосипед">
+              <img class="catalog__img catalog__img--mountain" src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg" width="342" height="543" alt="Горный велосипед">
             </picture>
           </a>
         </li>
@@ -93,7 +100,7 @@
           <a class="catalog__link catalog__link--child-bike" href="#">
             <picture>
               <!-- 1х: 342px; 2x: 684px -->
-              <img class="catalog__img" src="img/child-bike.jpg" srcset="img/child-bike@2x.jpg" alt="Детский велосипед">
+              <img class="catalog__img catalog__img--child" src="img/child-bike.jpg" srcset="img/child-bike@2x.jpg" width="342" height="543" alt="Детский велосипед">
             </picture>
           </a>
         </li>
@@ -101,9 +108,8 @@
     </section>
 
     <section class="bikes-video" id="bikes-video">
-      <div class="bikes-video__info">
-        <h2 class="bikes-video__title">Видео про велосипеды</h2>
-        <p class="bikes-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      <h2 class="bikes-video__title">Видео про велосипеды</h2>
+      <div class="bikes-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. <p></p>
       </div>
       <div class="bikes-video__wrapper">
         <video class="bikes-video__content"></video>
@@ -119,20 +125,37 @@
       <div class="map">
         <picture>
           <!-- 1х: 957px; 2x: 1914px -->
-          <img class="map__img" src="img/map.jpg" srcset="img/map@2x.jpg" alt="Карта с адресом нашего местонахождения">
+          <img class="map__img" src="img/map.jpg" srcset="img/map@2x.jpg" width="957" height="530" alt="Карта с адресом нашего местонахождения">
         </picture>
-
       </div>
-      <div class="email">
-        <a class="email__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      </div>
-      <div class="phone">
-        <a class="phone__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
-      </div>
+      <div class="contacts__wrapper">
+        <div class="contacts__link-container">
+          <a class="contacts__link contacts__link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        </div>
+        <div class="contacts__link-container">
+          <a class="contacts__link contacts__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+  </div>
     </section>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+  var navList = document.querySelector('.main-nav__list');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  
+  navList.classList.remove('main-nav__list--no-js');
+  
+  navToggle.addEventListener('click', function () {
+    if (navList.classList.contains('main-nav__list--closed')) {
+      navList.classList.remove('main-nav__list--closed');
+      navList.classList.add('main-nav__list--opened');
+    } else {
+      navList.classList.add('main-nav__list--closed');
+      navList.classList.remove('main-nav__list--opened');
+    }
+  });
+  </script>
+
 </body>
 
 </html>

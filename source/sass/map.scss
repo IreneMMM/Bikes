@@ -1,0 +1,22 @@
+.map {
+  margin-bottom: 41px;
+
+  @media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+    margin-bottom: 23px;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 0 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.map__img {
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
