@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 
 <head>
@@ -7,21 +8,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
-  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-extra-bold.woff" as="font">
-  <link rel="preload" href="fonts/open-sans-extra-bold.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-light.woff" as="font">
-  <link rel="preload" href="fonts/open-sans-light.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-regular.woff" as="font">
-  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-semi-bold.woff" as="font">
-  <link rel="preload" href="fonts/open-sans-semi-bold.woff2" as="font"> -->
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensanssemibold.woff" as="font">
+  <link rel="preload" href="fonts/opensanssemibold.woff2" as="font">
 </head>
+
 <body class="page">
   <header class="page-header page-header--nojs">
     <nav class="main-nav main-nav--no-js">
-      <a class="main-nav__logo">
+      <a class="main-nav__logo" href="#">
         <img src="img/icon-logo.svg" width="68" height="21" alt="Главная страница сайта Велосипеды">
       </a>
       <ul class="main-nav__list main-nav__list--no-js">
@@ -36,12 +36,14 @@
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#contacts">Контакты</a>
-        </li>        
+        </li>
       </ul>
       <button class="main-nav__toggle main-nav__toggle--no-js" type="button"></button>
     </nav>
+  </header>
 
-    <section class="promo promo--nojs">
+  <main class="page-main">
+    <div class="promo promo--nojs">
       <div class="promo__info">
         <h1 class="promo__title">Мы продаем велосипеды</h1>
         <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
@@ -51,19 +53,17 @@
           <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="form__field">
             <label class="visually-hidden" for="user-name">Имя</label>
-            <input type="text" name="name" id="user-name" placeholder="Введите Ваше Имя" required="">
+            <input type="text" name="name" id="user-name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?" required="">
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="user-phone">Телефон</label>
-            <input type="tel" name="phone" id="user-phone" placeholder="Введите Ваш номер телефона" required="">
+            <input type="tel" name="phone" id="user-phone" placeholder="Введите Ваш номер телефона" pattern="^((\+7|7|8)+([0-9]){10})$" required="">
           </div>
           <button class="form__button" type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>
-    </section>
-  </header>
+    </div>
 
-  <main class="page-main">
     <section class="benefits" id="benefits">
       <h2 class="benefits__title">Несколько фактов о нас</h2>
       <ul class="benefits__list">
@@ -109,7 +109,9 @@
 
     <section class="bikes-video" id="bikes-video">
       <h2 class="bikes-video__title">Видео про велосипеды</h2>
-      <div class="bikes-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. <p></p>
+      <div class="bikes-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
+        <p>
+        </p>
       </div>
       <div class="bikes-video__wrapper">
         <video class="bikes-video__content"></video>
@@ -135,26 +137,10 @@
         <div class="contacts__link-container">
           <a class="contacts__link contacts__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
-  </div>
+      </div>
     </section>
   </footer>
-
-  <script>
-  var navList = document.querySelector('.main-nav__list');
-  var navToggle = document.querySelector('.main-nav__toggle');
-  
-  navList.classList.remove('main-nav__list--no-js');
-  
-  navToggle.addEventListener('click', function () {
-    if (navList.classList.contains('main-nav__list--closed')) {
-      navList.classList.remove('main-nav__list--closed');
-      navList.classList.add('main-nav__list--opened');
-    } else {
-      navList.classList.add('main-nav__list--closed');
-      navList.classList.remove('main-nav__list--opened');
-    }
-  });
-  </script>
+  <script src="js/main.js"></script>
 
 </body>
 

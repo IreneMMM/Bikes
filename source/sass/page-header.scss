@@ -7,8 +7,6 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-color: $promo-background;
-  z-index: -1;
-  margin-bottom: 150px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-bike-desktop@2x.jpg");
@@ -16,7 +14,6 @@
 
   @media (max-width: $tablet-width) {
     height: 340px;
-    margin-bottom: 413px;
     background-image: url("../img/promo-bike-tablet.jpg");
 
     @media (min-resolution: 2dppx) {

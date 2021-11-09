@@ -1,4 +1,4 @@
-.page{
+.page {
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
@@ -10,12 +10,6 @@
   color: $basic-black;
   background-color: $basic-white;
   box-sizing: border-box;
-}
-
-.page--js {
-  @media (max-width: $tablet-width) {
-    overflow: hidden;
-  }
 }
 
 img {
