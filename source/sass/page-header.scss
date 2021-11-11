@@ -1,7 +1,8 @@
 .page-header {
   position: relative;
   width: 100%;
-  height: 825px;
+  min-height: 825px;
+  margin-bottom: 150px;
   background-image: url("../img/promo-bike-desktop.jpg");
   background-size: cover;
   background-position: 50% 0;
@@ -13,21 +14,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    height: 340px;
-    background-image: url("../img/promo-bike-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-bike-tablet@2x.jpg");
-    }
+    min-height: auto;
+    background-image: none;
+    background-color: $basic-white;
   }
 
   @media (max-width: $mobile-width) {
-    height: 319px;
-    padding-bottom: 70px;
-    background-image: url("../img/promo-bike-mobile.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-bike-mobile@2x.jpg");
-    }
+    min-height: 319px;
+    margin-bottom: 70px;
   }
 }

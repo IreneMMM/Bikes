@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff" as="font">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff" as="font">
@@ -16,14 +15,12 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="preload" href="fonts/opensanssemibold.woff" as="font">
   <link rel="preload" href="fonts/opensanssemibold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page">
   <header class="page-header page-header--nojs">
     <nav class="main-nav main-nav--no-js">
-      <a class="main-nav__logo" href="#">
-        <img src="img/icon-logo.svg" width="68" height="21" alt="Главная страница сайта Велосипеды">
-      </a>
       <ul class="main-nav__list main-nav__list--no-js">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#benefits">О нас</a>
@@ -35,16 +32,17 @@
           <a class="main-nav__link" href="#bikes-video">Видео про велосипеды</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#contacts">Контакты</a>
+          <a class="main-nav__link" href="#page-footer">Контакты</a>
         </li>
       </ul>
       <button class="main-nav__toggle main-nav__toggle--no-js" type="button"></button>
     </nav>
-  </header>
 
-  <main class="page-main">
     <div class="promo promo--nojs">
       <div class="promo__info">
+        <a class="logo">
+          <img src="img/icon-logo.svg" width="68" height="21" alt="Главная страница сайта Велосипеды">
+        </a>
         <h1 class="promo__title">Мы продаем велосипеды</h1>
         <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
@@ -65,7 +63,9 @@
         </form>
       </div>
     </div>
+  </header>
 
+  <main class="page-main">
     <section class="benefits" id="benefits">
       <h2 class="benefits__title">Несколько фактов о нас</h2>
       <ul class="benefits__list">
@@ -114,40 +114,33 @@
 
     <section class="bikes-video" id="bikes-video">
       <h2 class="bikes-video__title">Видео про велосипеды</h2>
-      <div class="bikes-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
-        <p>
-        </p>
-      </div>
+      <p class="bikes-video__text">
+        В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
+      </p>
       <div class="bikes-video__wrapper">
         <video class="bikes-video__content"></video>
-        <button class="bikes-video__button" type="button" aria-label="Воспроизвести"></button>
+        <a class="bikes-video__button" type="button" aria-label="Воспроизвести"></a>
       </div>
     </section>
   </main>
 
-  <footer class="page-footer">
-    <section class="contacts" id="contacts">
-      <h2 class="contacts__title">Как нас найти?</h2>
-      <p class="contacts__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <div class="map">
-        <picture>
-          <!-- 1х: 957px; 2x: 1914px -->
-          <img class="map__img" src="img/map.jpg" srcset="img/map@2x.jpg" width="957" height="530"
-            alt="Карта с адресом нашего местонахождения">
-        </picture>
-      </div>
-      <div class="contacts__wrapper">
-        <div class="contacts__link-container">
-          <a class="contacts__link contacts__link--email"
-            href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        </div>
-        <div class="contacts__link-container">
-          <a class="contacts__link contacts__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
-        </div>
-      </div>
-    </section>
+  <footer class="page-footer" id="page-footer">
+    <h2 class="page-footer__title">Как нас найти?</h2>
+    <p class="page-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <div class="map">
+      <picture>
+        <!-- 1х: 957px; 2x: 1914px -->
+        <img class="map__img" src="img/map.jpg" srcset="img/map@2x.jpg" width="957" height="530"
+          alt="Карта с адресом нашего местонахождения">
+      </picture>
+    </div>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__link page-footer__link--email"
+        href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+      <a class="page-footer__link page-footer__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </div>
   </footer>
   <script src="js/main.js"></script>
-
 </body>
+
 </html>
