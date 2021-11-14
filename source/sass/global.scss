@@ -10,6 +10,10 @@
   color: $basic-black;
   background-color: $basic-white;
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -25,4 +29,12 @@ img {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.page-footer {
+  flex-shrink: 0;
 }

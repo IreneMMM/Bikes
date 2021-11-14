@@ -1,20 +1,17 @@
 .benefits {
   margin: 0 auto;
-  margin-bottom: 130px;
+  margin-bottom: 110px;
   max-width: 1166px;
   text-align: center;
 }
 
-.benefits__title {
+.benefits h2 {
   margin: 0;
   margin-bottom: 50px;
-  padding-left: 17px;
-
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-
   color: $basic-title;
 }
 
@@ -26,18 +23,15 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-
   counter-reset: section;
 }
 
 .benefits__item {
   position: relative;
-
   width: 25%;
   max-width: 263px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   padding: 53px 0 24px;
-
   font-size: 22px;
   line-height: 34px;
   letter-spacing: -0.5px;
@@ -47,26 +41,22 @@
   position: absolute;
   counter-increment: section;
   content: "0"counter(section);
-
   top: 0;
   left: 44%;
-
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: -1.27273px;
-
   color: $basic-green;
-  ;
 }
 
 @media (max-width: $tablet-width) {
   .benefits {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 
-  .benefits__title {
+  .benefits h2 {
     margin-bottom: 30px;
     padding-left: 0;
 
@@ -75,12 +65,12 @@
   }
 
   .benefits__list {
-    padding: 0;
-    max-width: 700px;
+    padding: 0 100px;
+    justify-content: space-around;
   }
 
   .benefits__item {
-    width: 50%;
+    width: 265px;
     margin-right: 0;
     margin-bottom: 18px;
   }
@@ -89,14 +79,22 @@
 @media (max-width: $mobile-width) {
   .benefits {
     padding: 0 15px;
+    margin-bottom: 40px;
+  }
+
+  .benefits__list {
+    padding: 0;
   }
 
   .benefits__item {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 42px;
-    padding: 53px 0 9px;
-
+    margin-bottom: 38px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 125px;
+    justify-content: end;
     font-size: 18px;
     line-height: 34px;
 
@@ -105,7 +103,7 @@
     }
   }
 
-  .benefits__item::before {
-    top: 5px;
+  .benefits__item:not(:first-child)::before {
+    top: 16px;
   }
 }

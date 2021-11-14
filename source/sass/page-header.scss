@@ -15,12 +15,12 @@
 
   @media (max-width: $tablet-width) {
     min-height: auto;
+    margin-bottom: 70px;
     background-image: none;
     background-color: $basic-white;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 319px;
-    margin-bottom: 70px;
   }
 }

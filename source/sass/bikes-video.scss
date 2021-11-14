@@ -6,22 +6,21 @@
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(255,255,255,1) 89%, rgba(255,255,255,1) 100%);  padding-top: 120px;
   box-sizing: border-box;
-  margin-bottom: 248px;
+  margin-bottom: 150px;
 
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
-    margin-bottom: 155px;
+    margin-bottom: 70px;
     }
 
   @media (max-width: $mobile-width) {
     padding: 0 16px;
     padding-top: 84px;
-    margin-bottom: 70px;
   }
 }
 
-.bikes-video__title {
+.bikes-video h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
@@ -35,7 +34,7 @@
   }
 }
 
-.bikes-video__text {
+.bikes-video p {
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;

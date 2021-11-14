@@ -43,16 +43,15 @@
         <a class="logo">
           <img src="img/icon-logo.svg" width="68" height="21" alt="Главная страница сайта Велосипеды">
         </a>
-        <h1 class="promo__title">Мы продаем велосипеды</h1>
-        <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="promo__form form">
         <form action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
-          <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="form__field">
             <label class="visually-hidden" for="user-name">Имя</label>
-            <input type="text" name="name" id="user-name" placeholder="Введите Ваше Имя"
-              pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?" required="">
+            <input type="text" name="name" id="user-name" placeholder="Введите Ваше Имя" required="">
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="user-phone">Телефон</label>
@@ -67,7 +66,7 @@
 
   <main class="page-main">
     <section class="benefits" id="benefits">
-      <h2 class="benefits__title">Несколько фактов о нас</h2>
+      <h2>Несколько фактов о нас</h2>
       <ul class="benefits__list">
         <li class="benefits__item">Самый широкий выбор велосипедов!</li>
         <li class="benefits__item">Доставка велосипедов по всей России!</li>
@@ -77,12 +76,13 @@
     </section>
 
     <section class="catalog" id="catalog">
-      <h2 class="catalog__title">Виды велосипедов</h2>
+      <h2>Виды велосипедов</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <h3 class="catalog__item-title">Дорожный велосипед</h3>
+          <h3>Дорожный велосипед</h3>
           <a class="catalog__link catalog__link--road-bike" href="#">
             <picture>
+              <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
               <img class="catalog__img" src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg" width="342" height="543"
                 alt="Дорожный велосипед">
@@ -90,9 +90,10 @@
           </a>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__item-title">Горный велосипед</h3>
+          <h3>Горный велосипед</h3>
           <a class="catalog__link catalog__link--mountain-bike" href="#">
             <picture>
+              <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
               <img class="catalog__img catalog__img--mountain" src="img/mountain-bike.jpg"
                 srcset="img/mountain-bike@2x.jpg" width="342" height="543" alt="Горный велосипед">
@@ -100,9 +101,10 @@
           </a>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__item-title">Детский велосипед</h3>
+          <h3>Детский велосипед</h3>
           <a class="catalog__link catalog__link--child-bike" href="#">
             <picture>
+              <source type="image/webp" srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
               <img class="catalog__img catalog__img--child" src="img/child-bike.jpg" srcset="img/child-bike@2x.jpg"
                 width="342" height="543" alt="Детский велосипед">
@@ -113,8 +115,8 @@
     </section>
 
     <section class="bikes-video" id="bikes-video">
-      <h2 class="bikes-video__title">Видео про велосипеды</h2>
-      <p class="bikes-video__text">
+      <h2>Видео про велосипеды</h2>
+      <p>
         В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
       </p>
       <div class="bikes-video__wrapper">
@@ -125,12 +127,13 @@
   </main>
 
   <footer class="page-footer" id="page-footer">
-    <h2 class="page-footer__title">Как нас найти?</h2>
-    <p class="page-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <h2>Как нас найти?</h2>
+    <p>Мы находимся по адресу: <br/> Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     <div class="map">
       <picture>
+        <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
         <!-- 1х: 957px; 2x: 1914px -->
-        <img class="map__img" src="img/map.jpg" srcset="img/map@2x.jpg" width="957" height="530"
+        <img src="img/map.jpg" srcset="img/map@2x.jpg" width="957" height="530"
           alt="Карта с адресом нашего местонахождения">
       </picture>
     </div>
@@ -140,7 +143,9 @@
       <a class="page-footer__link page-footer__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
