@@ -18,9 +18,8 @@
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   color: $basic-title;
-
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -97,7 +96,7 @@
   letter-spacing: -0.5px;
   font-weight: 600;
   color: $basic-black;
-  order: 2
+  order: 2;
 }
 
 .catalog__img {
@@ -112,13 +111,13 @@
 
 .catalog__img--mountain {
   @media (max-width: $tablet-width) {
-    object-position: 0px -65px;
+    object-position: 0 -65px;
   }
 }
 
 .catalog__img--child {
   @media (max-width: $tablet-width) {
-    object-position: 0px -85px;
+    object-position: 0 -85px;
   }
 }
 
