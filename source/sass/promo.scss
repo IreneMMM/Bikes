@@ -3,7 +3,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   z-index: 2;
 
   @media (max-width: $tablet-width) {
@@ -22,7 +21,6 @@
 .promo__info {
   width: 400px;
   z-index: 2;
-  text-align: center;
 
   @media (max-width: $tablet-width) {
     width: 100%;

@@ -8,6 +8,7 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-color: $promo-background;
+  overflow-x: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-bike-desktop@2x.jpg");
