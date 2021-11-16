@@ -17,7 +17,7 @@
 
 .benefits__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   max-width: 1166px;
   margin: 0 auto;
@@ -65,7 +65,6 @@
 
   .benefits__list {
     padding: 0 100px;
-    justify-content: space-around;
   }
 
   .benefits__item {
